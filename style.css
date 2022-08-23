@@ -18,6 +18,7 @@ main{
 }
 
 .container{
+    flex-direction: column;
     width: 80vw;
     height: 80vh;
     display: flex;
@@ -29,4 +30,45 @@ main{
     backdrop-filter: blur( 14.5px );
     -webkit-backdrop-filter: blur( 14.5px );
     border-radius: 10px;
+}
+
+.item{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 161, 161, 232, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14.5px );
+    -webkit-backdrop-filter: blur( 14.5px );
+    border-radius: 10px;
+}
+
+.item label{
+    display: flex;
+    gap: .3rem;
+}
+
+form button{
+    font-weight: 700;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 2rem;
+    background: rgba( 161, 161, 232, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14.5px );
+    -webkit-backdrop-filter: blur( 14.5px );
+    border-radius: 10px;
+}
+
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
 }
