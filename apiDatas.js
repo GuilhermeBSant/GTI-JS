@@ -1,8 +1,7 @@
 export async function getDatas(){
-    let res = await fetch('https://quiz-trainee.herokuapp.com/questions')
-    let objects = await res.json()
-    console.log(objects[0])
-    return objects
+    let response = await fetch('https://quiz-trainee.herokuapp.com/questions')
+    let data = await response.json()
+    console.log(data)
+    return data
 }
-
 

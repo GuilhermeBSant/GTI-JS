@@ -3,36 +3,41 @@ import {getDatas} from './apiDatas.js';
 let teste = await getDatas()
 //opções: title, id, options(array com as respostas[value, id, question_id,answer])
 
-function createElement(index){
+
+function createOptions(index){
     let form = document.querySelector("#form");
     document.getElementById('title').innerText = teste[0].title
+
+    teste[index].options.forEach( (e, i) =>{
+        console.log(e)
+
     let div = document.createElement('div')
     div.classList.add('item')
 
     let optionCheckbox = document.createElement("input")
     optionCheckbox.type = "radio"
     optionCheckbox.name = "resposta"
-    optionCheckbox.value = teste[0].options[0].value
+    optionCheckbox.value = teste[index].options[i].value
 
     let optionLabel = document.createElement("label")
 
     let optionAnswer = document.createElement("p")
-    optionAnswer.innerText = teste[0].options[0].answer
+    optionAnswer.innerText = teste[0].options[i].answer
 
     optionLabel.appendChild(optionCheckbox)
     optionLabel.appendChild(optionAnswer)
 
     form.appendChild(div)
     div.appendChild(optionLabel)
+    })
 }
 
 function createButton(){
     let form = document.querySelector("#form");
     let button = document.createElement("button")
-    button.type = "submit"
     button.innerText = "Enviar"
     form.appendChild(button)
 }
 
-createElement()
+createOptions(0)
 createButton()
