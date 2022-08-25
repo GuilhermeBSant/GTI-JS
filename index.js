@@ -3,7 +3,6 @@ import { getDatas } from "./apiDatas.js";
 let teste = await getDatas();
 let question = 0;
 let totalOfValues = 0;
-//opções: title, id, options(array com as respostas[value, id, question_id,answer])
 
 (async function startForm(){
     document.querySelector("#title").innerText = "GTI QUIZ"
