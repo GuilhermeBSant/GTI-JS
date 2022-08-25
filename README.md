@@ -1,1 +1,5 @@
-##Projeto para o segundo desafio para os treinees da GTI.
+
+# 🔊 | GTI JR Quiz
+
+🚀 Projeto desenvolvido para o desafio de JS!
+
