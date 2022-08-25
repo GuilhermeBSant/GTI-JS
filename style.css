@@ -96,3 +96,16 @@ button[disabled]{
     -webkit-backdrop-filter: blur( 14.5px );
     border-radius: 10px;
 }
+
+.developed{
+    font-weight: bold;
+    font-size: small;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    justify-content: center;
+    gap: .3rem;
+    align-items: center;
+    margin-right: .5rem;
+}
